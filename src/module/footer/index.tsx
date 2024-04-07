@@ -15,7 +15,7 @@ const listIcon = [
   },
   {
     icon: 'ico-Icons',
-    path: '/cart',
+    path: '/charge',
   },
   {
     icon: 'ico-user-circle',

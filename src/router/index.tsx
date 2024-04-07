@@ -10,6 +10,9 @@ import EmptyLayout from '../layouts/empty-layout'
 import VerifyPage from '../pages/auth/verify'
 import DefaultLayout from '../layouts/default-layout'
 import UpcomingPage from '../pages/upcoming'
+import History from '../pages/history'
+import Account from '../pages/account'
+import Charge from '../pages/charge'
 
 export default function JHOWebRouter() {
   return (
@@ -24,6 +27,9 @@ export default function JHOWebRouter() {
 
         <Route path="/" element={<DefaultLayout />}>
           <Route path={routerSystem.UPCOMING.relativePath} element={<UpcomingPage />} />
+          <Route path={routerSystem.HISTORY.relativePath} element={<History />} />
+          <Route path={routerSystem.ACCOUNT.relativePath} element={<Account />} />
+          <Route path={routerSystem.CHARGE.relativePath} element={<Charge />} />
         </Route>
 
         <Route path="" element={<EmptyLayout />}>

@@ -27,4 +27,16 @@ export const routerSystem = {
     path: '/upcoming',
     relativePath: 'upcoming',
   },
+  HISTORY: {
+    path: '/history',
+    relativePath: 'history',
+  },
+  CHARGE: {
+    path: '/charge',
+    relativePath: 'charge',
+  },
+  ACCOUNT: {
+    path: '/account',
+    relativePath: 'account',
+  },
 }
