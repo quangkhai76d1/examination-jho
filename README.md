@@ -1,31 +1,12 @@
-# React + TypeScript + Vite
+Để chạy mã nguồn của dự án, bạn cần làm theo các bước sau:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Trước tiên, hãy đảm bảo bạn đã cài đặt Node.js và npm trên máy của mình. Sau đó có thể clone hoặc tải source về máy của bạn.
 
-Currently, two official plugins are available:
+Mở một terminal và điều hướng đến thư mục dự án: cd path/to/your/project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Cài đặt các phụ thuộc của dự án: yarn install
+Tiếp theo là chạy lệnh: yarn build
+Khởi động máy chủ phát triển: yarn dev
+Bây giờ, ứng dụng của bạn sẽ chạy tại http://localhost:5173 (hoặc một cổng khác nếu bạn đã định cấu hình nó theo cách khác).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# examination-jho
+Hãy nhớ thay thế path/to/your/project bằng đường dẫn thực tế đến thư mục dự án của bạn.
