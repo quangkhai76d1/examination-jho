@@ -1,0 +1,42 @@
+@import 'common';
+
+html {
+  height: 100%;
+  background-color: $color-neutral-900;
+
+  ::-webkit-scrollbar {
+    width: em(12);
+    background-color: transparent;
+    position: relative;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    display: block;
+    background-color: $main-bg;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #717171;
+    border-radius: em(100);
+    padding: 0 em(2);
+    border-right: em(2) solid transparent;
+    border-left: em(2) solid transparent;
+    background-clip: padding-box;
+  }
+}
+
+body {
+  background-color: $color-neutral-900;
+}
+
+#root {
+  height: 100%;
+}
+
+@include desktops {
+  body {
+    height: 100%;
+  }
+}

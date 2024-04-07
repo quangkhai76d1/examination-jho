@@ -1,0 +1,33 @@
+@use 'sass:math';
+
+$font-size-base: 16px;
+
+$em-base: $font-size-base;
+$rem-base: $font-size-base;
+
+@function strip-units($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+@function em($pxval, $base: $em-base) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return math.div($pxval, $base) * 1em;
+}
+
+@function rem($pxval) {
+  $base: $rem-base;
+
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return (math.div($pxval, $base) * 1rem);
+}
