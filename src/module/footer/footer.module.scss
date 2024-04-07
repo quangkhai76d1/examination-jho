@@ -1,0 +1,24 @@
+@import '../../assets/styles/common';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: em(4);
+    &:hover {
+      color: white;
+    }
+
+    .icon {
+      font-size: em(24);
+      color: $opacity-basic-30;
+    }
+    .active {
+      color: white;
+    }
+  }
+}

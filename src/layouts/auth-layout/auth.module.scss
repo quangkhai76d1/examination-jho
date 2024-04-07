@@ -1,0 +1,32 @@
+@import '../../assets/styles/common.scss';
+
+.auth {
+  padding: em(32);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: em(24);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__desc {
+    color: $main-color;
+    font-variant-numeric: lining-nums tabular-nums stacked-fractions;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: $font-azo-sans;
+    font-size: em(32);
+    font-style: normal;
+    font-weight: 900;
+    line-height: em(44, 32);
+  }
+}
+
+.content {
+  width: 100%;
+  flex: 1 1 auto;
+}

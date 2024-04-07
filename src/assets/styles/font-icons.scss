@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?1092fv');
-  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?1092fv#iefix')
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?i75zz4');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?i75zz4#iefix')
       format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?1092fv') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?1092fv') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?1092fv##{$icomoon-font-family}')
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?i75zz4') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?i75zz4') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?i75zz4##{$icomoon-font-family}')
       format('svg');
   font-weight: normal;
   font-style: normal;
@@ -29,6 +29,11 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ico-eye-open {
+  &:before {
+    content: $ico-eye-open;
+  }
+}
 .ico-user-circle {
   &:before {
     content: $ico-user-circle;

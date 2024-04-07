@@ -1,0 +1,66 @@
+@import '../../../assets/styles/common';
+
+.container {
+  display: flex;
+  margin-top: em(4);
+  min-height: em(24);
+  color: $error-color;
+
+  i {
+    font-size: em(20);
+    line-height: em(24, 20);
+    margin-right: em(8, 20);
+  }
+
+  span {
+    text-align: left;
+    font-size: em(14);
+    line-height: em(24, 14);
+  }
+}
+
+.form__error--auth {
+  margin-top: em(4);
+  min-height: em(24);
+  padding-left: em(2);
+
+  i {
+    font-size: em(24);
+    margin-right: em(8, 24);
+  }
+
+  span {
+    font-size: em(14);
+    line-height: em(24, 14);
+  }
+}
+
+@include desktops {
+  .container {
+    i {
+      font-size: em(24);
+      margin-right: em(8, 24);
+    }
+
+    span {
+      font-size: em(16);
+      line-height: em(24);
+    }
+  }
+
+  .form__error--auth {
+    margin-top: em(4);
+    min-height: em(24);
+    padding-left: em(2);
+
+    i {
+      font-size: em(24);
+      margin-right: em(8, 24);
+    }
+
+    span {
+      font-size: em(14);
+      line-height: em(24, 14);
+    }
+  }
+}

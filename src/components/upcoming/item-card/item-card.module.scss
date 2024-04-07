@@ -1,0 +1,122 @@
+@import '../../../assets/styles/common';
+
+.item-card {
+  border-radius: em(24);
+  border: em(4) solid #56698f;
+  background: #3c4868;
+
+  .image {
+    border-radius: em(24) em(24) 0 0;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: em(24) em(24) 0 0;
+    }
+    .overlay {
+      border-radius: em(24) em(24) 0 0;
+      background: #000000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.2;
+    }
+  }
+
+  .content {
+    padding: em(8);
+
+    h4 {
+      color: white;
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-size: em(12);
+      font-style: normal;
+      font-weight: 700;
+      line-height: em(16);
+      margin-bottom: em(8);
+    }
+
+    .price {
+      padding: em(8);
+      border-radius: em(6);
+      background: rgba(255, 255, 255, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: em(8);
+      h5 {
+        color: white;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: em(10);
+        font-style: normal;
+        font-weight: 700;
+        line-height: em(12, 10);
+        margin-bottom: em(8, 10);
+      }
+
+      &__number {
+        color: white;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Montserrat;
+        font-size: em(16);
+        font-style: normal;
+        font-weight: 700;
+        line-height: em(24, 16);
+      }
+
+      &__convert {
+        color: rgba(255, 255, 255, 0.5);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Montserrat;
+        font-size: em(10);
+        font-style: normal;
+        font-weight: 700;
+        line-height: em(12, 10);
+        display: flex;
+        align-items: center;
+        gap: em(2);
+      }
+    }
+
+    .unlock {
+      h5 {
+        color: #1f2332;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: em(10);
+        font-style: normal;
+        font-weight: 700;
+        line-height: em(12, 10);
+      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: em(99);
+      background: white;
+      padding: em(8);
+
+      &__container {
+        display: flex;
+        align-items: center;
+        gap: em(4);
+        border-radius: 9999px;
+        background: #c7577c;
+        color: var(--Color-Basic-000, #fff);
+        text-align: right;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: em(12);
+        font-style: normal;
+        font-weight: 700;
+        line-height: em(16, 12);
+        padding: em(4, 12) em(6, 12);
+      }
+    }
+  }
+}

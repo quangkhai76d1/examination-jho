@@ -1,0 +1,32 @@
+@import '../../assets/styles/common';
+
+.layout {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    padding: em(8) em(12);
+    z-index: 1000;
+  }
+
+  .content {
+    padding: em(64) em(12);
+  }
+
+  .footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    padding: em(12) em(32);
+    z-index: 1000;
+  }
+}

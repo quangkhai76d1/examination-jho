@@ -12,6 +12,7 @@ $btn-text-color: $main-color;
 
 $font-montserrat: 'Montserrat', sans-serif;
 $font-product-sans: 'Product Sans', sans-serif;
+$font-azo-sans: 'Azo Sans', sans-serif;
 
 $color-neutral-50: #f5f6fa;
 $color-neutral-500: #56698f;
@@ -20,6 +21,9 @@ $color-neutral-900: #1f2332;
 
 $opacity-neutral-50: rgba(86, 105, 143, 0.5);
 $opacity-neutral-30: rgba(255, 255, 255, 0.3);
+$opacity-neutral-20: rgba(86, 105, 143, 0.2);
+
+$opacity-basic-30: #ffffff4d;
 
 $color-accent-400: #68c860;
 $color-accent-500: #4abf40;
@@ -33,3 +37,5 @@ $color-error-500: #ee2f2f;
 $color-success-500: #33b454;
 
 $color-warning-500: #d48a1c;
+
+$color-black: #000000;

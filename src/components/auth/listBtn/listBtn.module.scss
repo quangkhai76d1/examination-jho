@@ -1,0 +1,14 @@
+@import '../../../assets/styles/common';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: em(24);
+  align-items: center;
+}
+
+.line {
+  height: em(2);
+  background-color: $opacity-basic-30;
+  width: em(128);
+}

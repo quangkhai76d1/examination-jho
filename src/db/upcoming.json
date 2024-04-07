@@ -1,0 +1,30 @@
+[
+  {
+    "imageUrl": "src/assets/img/switch.png",
+    "name": "aaaa",
+    "price": 200,
+    "priceConverted": 2000,
+    "priceUnlocked": 200
+  },
+  {
+    "imageUrl": "src/assets/img/switch-1.png",
+    "name": "bbbb",
+    "price": 300,
+    "priceConverted": 3000,
+    "priceUnlocked": 300
+  },
+  {
+    "imageUrl": "src/assets/img/switch-3.png",
+    "name": "bbbb",
+    "price": 400,
+    "priceConverted": 4000,
+    "priceUnlocked": 400
+  },
+  {
+    "imageUrl": "src/assets/img/switch-3.png",
+    "name": "bbbb",
+    "price": 400,
+    "priceConverted": 4000,
+    "priceUnlocked": 400
+  }
+]

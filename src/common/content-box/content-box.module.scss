@@ -1,0 +1,38 @@
+@import '../../assets//styles/common';
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: em(6);
+    margin-top: em(24);
+    margin-bottom: em(12);
+    &__desc {
+      color: white;
+      font-size: em(22);
+      font-style: normal;
+      font-weight: 700;
+      line-height: em(24, 22);
+    }
+    &__icon {
+      font-size: em(18);
+      padding: em(3, 18);
+      color: white;
+    }
+  }
+
+  .line {
+    margin: em(6) 0;
+    height: em(2);
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .content {
+    flex: 1 1 auto;
+  }
+}

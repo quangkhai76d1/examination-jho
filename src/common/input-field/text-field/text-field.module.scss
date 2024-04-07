@@ -1,0 +1,150 @@
+@import '../../../assets/styles/common';
+
+.form-group {
+  text-align: left;
+  &--auth {
+    .form-content {
+      gap: em(4);
+    }
+
+    .form__label {
+      font: normal 500 #{em(14)}/ em(24, 14);
+      color: #f4f4f4;
+    }
+
+    .form__input {
+      padding: em(11, 16) em(16, 16);
+    }
+
+    .password__btn {
+      padding: 0;
+
+      &:hover {
+        color: $color-black;
+      }
+      &:focus {
+        color: $text-secondary-color;
+      }
+    }
+
+    .form__error {
+      margin-top: em(4, 14);
+      min-height: em(24, 14);
+      padding-left: em(2, 14);
+      font-size: em(14);
+      line-height: em(24, 14);
+    }
+
+    .error__icon {
+      font-size: em(24, 14);
+      margin-right: em(8, 24);
+    }
+  }
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: em(8);
+}
+
+.form__label {
+  font-size: em(10);
+  line-height: em(12, 16);
+  color: $text-secondary-color;
+  font-weight: 700;
+  overflow: hidden;
+  color: $color-neutral-50;
+  font-feature-settings: 'clig' off, 'liga' off;
+  text-overflow: ellipsis;
+}
+
+.form-input-container {
+  position: relative;
+}
+
+.form__input {
+  font-size: em(12);
+  line-height: em(20, 12);
+  width: 100%;
+  padding: em(12, 12) em(12, 12) em(12, 12) em(40, 12);
+  background-color: $main-color;
+  border: em(2, 12) solid $opacity-neutral-20;
+  border-radius: em(6, 12);
+  outline: none;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  color: $color-black;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: 'clig' off, 'liga' off;
+  text-overflow: ellipsis;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset;
+  transition: box-shadow 0.3s ease;
+  height: em(36, 12);
+
+  &::placeholder {
+    color: $color-neutral-900;
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: em(1, 16) solid $color-neutral-900;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+
+  &.password {
+    padding-right: em(52, 16);
+  }
+}
+
+.form__icon {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: em(12, 20);
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+  padding: em(2, 20);
+  background-color: transparent;
+  color: $color-neutral-900;
+  font-size: em(20);
+  line-height: 1;
+  font-weight: 600;
+  cursor: pointer;
+
+  i {
+    display: block;
+  }
+}
+
+.password__btn {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: em(12, 20);
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+  padding: em(2, 20);
+  background-color: transparent;
+  color: $opacity-neutral-50;
+  font-size: em(20);
+  line-height: 1;
+  cursor: pointer;
+  font-weight: 500;
+
+  i {
+    display: block;
+  }
+}
+
+.form-group--no-border {
+  .form__input {
+    border: none;
+  }
+}

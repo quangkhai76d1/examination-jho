@@ -1,0 +1,65 @@
+@import '../../assets/styles/common';
+
+.header {
+  &__top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: em(12);
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: em(8);
+
+    .budget {
+      display: flex;
+      align-items: center;
+      gap: em(4);
+      color: #c7577c;
+
+      .number {
+        text-align: right;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: em(14);
+        font-style: normal;
+        font-weight: 700;
+        line-height: em(20, 14);
+      }
+    }
+
+    .line {
+      width: 1px;
+      height: em(16);
+      background-color: rgba(86, 105, 143, 0.5);
+    }
+
+    .account {
+      background-color: transparent;
+      border: none;
+      .icon {
+        font-size: em(24);
+        color: white;
+      }
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    gap: em(4);
+
+    .line {
+      height: em(4);
+      background-color: #4abf40;
+      border-radius: em(6);
+      width: 100%;
+    }
+  }
+}

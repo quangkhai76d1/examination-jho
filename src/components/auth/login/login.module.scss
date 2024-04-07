@@ -1,0 +1,18 @@
+@import '../../../assets/styles/common';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: em(24);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: em(24);
+  padding-top: em(8);
+
+  &__login {
+    height: em(60);
+  }
+}
